@@ -1,0 +1,524 @@
+.flex-box-sp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-box-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-box-end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.flex-box-cc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.desktop {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.desktop-sizing {
+  width: 80%;
+}
+.tablet {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+}
+.tablet-sizing {
+  width: 95%;
+}
+.mobile {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 65vh;
+}
+.mobile-sizing {
+  width: 87%;
+}
+.font-size h1 {
+  font-size: 3rem;
+}
+.font-size h2 {
+  font-size: 2.5rem;
+}
+.font-size h3 {
+  font-size: 1.4rem;
+}
+.font-size p {
+  font-size: 1.125rem;
+}
+.font-size h4 {
+  font-size: 1.125rem;
+}
+.font-size-mob h1 {
+  font-size: 2.5rem;
+}
+.font-size-mob h2 {
+  font-size: 1.8rem;
+}
+.font-size-mob h3 {
+  font-size: 1rem;
+}
+.font-size-mob p {
+  font-size: 0.9rem;
+}
+.font-size-mob h4 {
+  font-size: 0.9rem;
+}
+.norm-text {
+  font-size: 1.125rem;
+  line-height: 1.3rem;
+  font-family: "Roboto", open-sans;
+  color: #ffffff;
+}
+.norm-text-tab {
+  font-size: 1rem;
+  line-height: 1.1rem;
+  font-family: "Roboto", open-sans;
+  color: #ffffff;
+}
+.norm-text-mob {
+  font-size: 0.9rem;
+  line-height: 1rem;
+  font-family: "Roboto", open-sans;
+  color: #ffffff;
+}
+.button {
+  outline: none;
+  border: none;
+  padding: 8% 12%;
+  background-color: unset;
+  color: #ffffff;
+  font-size: 1rem;
+  text-wrap: nowrap;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+}
+nav {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh;
+  background-color: #171819;
+}
+nav .nav-overlay {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .nav-overlay .logo-nav {
+  width: 20%;
+}
+nav .nav-overlay .logo-nav h2 {
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  transition: 0.3s linear;
+  text-wrap: nowrap;
+}
+nav .nav-overlay .logo-nav h2 h1 {
+  font-size: 3rem;
+}
+nav .nav-overlay .logo-nav h2 h2 {
+  font-size: 2.5rem;
+}
+nav .nav-overlay .logo-nav h2 h3 {
+  font-size: 1.4rem;
+}
+nav .nav-overlay .logo-nav h2 p {
+  font-size: 1.125rem;
+}
+nav .nav-overlay .logo-nav h2 h4 {
+  font-size: 1.125rem;
+}
+nav .nav-overlay .logo-nav h2:hover {
+  color: #f13a11;
+}
+nav .nav-overlay .menu-nav {
+  width: 65%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav .nav-overlay .menu-nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+nav .nav-overlay .menu-nav ul li:hover a {
+  color: #f13a11;
+}
+nav .nav-overlay .menu-nav ul li:first-child > a {
+  color: #f13a11;
+}
+nav .nav-overlay .menu-nav ul li a {
+  font-size: 1rem;
+  line-height: 1.1rem;
+  font-family: "Roboto", open-sans;
+  color: #ffffff;
+  text-transform: uppercase;
+  transition: 0.3s linear;
+}
+nav .nav-overlay .socials-nav {
+  width: 10%;
+}
+nav .nav-overlay .socials-nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+nav .nav-overlay .socials-nav ul li i {
+  font-size: 1.3rem;
+  color: #ffffff;
+  transition: 0.3s linear;
+}
+nav .nav-overlay .socials-nav ul li:hover i {
+  color: #f13a11;
+}
+nav .nav-overlay .burger-nav {
+  display: none;
+}
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+  nav .nav-overlay {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav .nav-overlay .logo-nav {
+    width: 50%;
+  }
+  nav .nav-overlay .logo-nav h1 {
+    font-size: 3rem;
+  }
+  nav .nav-overlay .logo-nav h2 {
+    font-size: 2.5rem;
+  }
+  nav .nav-overlay .logo-nav h3 {
+    font-size: 1.4rem;
+  }
+  nav .nav-overlay .logo-nav p {
+    font-size: 1.125rem;
+  }
+  nav .nav-overlay .logo-nav h4 {
+    font-size: 1.125rem;
+  }
+  nav .nav-overlay .logo-nav h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    transition: 0.3s linear;
+    text-wrap: nowrap;
+  }
+  nav .nav-overlay .logo-nav h2:hover {
+    color: #f13a11;
+  }
+  nav .nav-overlay .menu-nav {
+    display: none;
+  }
+  nav .nav-overlay .socials-nav {
+    display: none;
+  }
+  nav .nav-overlay .burger-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+  }
+  nav .nav-overlay .burger-nav i {
+    font-size: 2.5rem;
+    color: #f13a11;
+  }
+}
+header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  background-image: url("../assets/header/hero-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+header .header-overlay {
+  min-height: inherit;
+  width: 100%;
+  background-color: #171819d0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-family: "Roboto", open-sans;
+  text-align: center;
+}
+header .header-overlay h1 {
+  font-size: 3rem;
+}
+header .header-overlay h2 {
+  font-size: 2.5rem;
+}
+header .header-overlay h3 {
+  font-size: 1.4rem;
+}
+header .header-overlay p {
+  font-size: 1.125rem;
+}
+header .header-overlay h4 {
+  font-size: 1.125rem;
+}
+header .header-overlay h3 {
+  font-weight: 400;
+  color: #909090;
+  padding-bottom: 2.5rem;
+}
+header .header-overlay .buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.5rem;
+}
+header .header-overlay .buttons button {
+  outline: none;
+  border: none;
+  padding: 8% 12%;
+  background-color: unset;
+  color: #ffffff;
+  font-size: 1rem;
+  text-wrap: nowrap;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+header .header-overlay .buttons .left-btn:hover {
+  color: #f13a11;
+}
+header .header-overlay .buttons .right-btn {
+  border: 1px solid #f13a11;
+  color: #f13a11;
+  font-size: 0.9rem;
+  transition: 0.3s linear;
+}
+header .header-overlay .buttons .right-btn:hover {
+  background-color: #ffffff;
+  border-color: transparent;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  header .header-overlay {
+    padding: 0 1rem;
+  }
+  header .header-overlay h3 {
+    font-weight: 400;
+    color: #909090;
+    padding-bottom: 2.5rem;
+    font-size: 1.2rem;
+  }
+  header .header-overlay h1 {
+    font-size: 2rem;
+  }
+  header .header-overlay .buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.scheduel {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  background-color: #171819;
+}
+.scheduel .scheduel-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+}
+.scheduel .scheduel-overlay h1 {
+  font-size: 3rem;
+}
+.scheduel .scheduel-overlay h2 {
+  font-size: 2.5rem;
+}
+.scheduel .scheduel-overlay h3 {
+  font-size: 1.4rem;
+}
+.scheduel .scheduel-overlay p {
+  font-size: 1.125rem;
+}
+.scheduel .scheduel-overlay h4 {
+  font-size: 1.125rem;
+}
+.scheduel .scheduel-overlay .left-scheduel {
+  width: 45%;
+  padding-right: 6%;
+  border-right: 2px solid #d1d1d11e;
+}
+.scheduel .scheduel-overlay .left-scheduel h3 {
+  font-weight: 400;
+  padding: 1rem 0;
+}
+.scheduel .scheduel-overlay .left-scheduel p {
+  color: #909090;
+}
+.scheduel .scheduel-overlay .left-scheduel button {
+  outline: none;
+  border: none;
+  padding: 8% 12%;
+  background-color: unset;
+  color: #ffffff;
+  font-size: 1rem;
+  text-wrap: nowrap;
+  text-transform: uppercase;
+  cursor: pointer;
+  width: 90%;
+  padding: 3% 0;
+  background-color: #f13a11;
+  font-weight: bold;
+  border-radius: 0.2rem;
+  margin-top: 1rem;
+}
+.scheduel .scheduel-overlay .right-scheduel {
+  border-image-width: 50%;
+}
+.scheduel .scheduel-overlay .right-scheduel li {
+  padding: 0.4rem 0;
+}
+.scheduel .scheduel-overlay .right-scheduel li p {
+  color: #909090;
+  padding-top: 0.3rem;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .scheduel {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+  }
+  .scheduel .scheduel-overlay {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .scheduel {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 65vh;
+  }
+  .scheduel .scheduel-overlay {
+    width: 87%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+  }
+  .scheduel .scheduel-overlay h1 {
+    font-size: 2.5rem;
+  }
+  .scheduel .scheduel-overlay h2 {
+    font-size: 1.8rem;
+  }
+  .scheduel .scheduel-overlay h3 {
+    font-size: 1rem;
+  }
+  .scheduel .scheduel-overlay p {
+    font-size: 0.9rem;
+  }
+  .scheduel .scheduel-overlay h4 {
+    font-size: 0.9rem;
+  }
+  .scheduel .scheduel-overlay .left-scheduel {
+    width: 100%;
+    padding: 0 0 1rem 0;
+    border-right: 0;
+    border-bottom: 2px solid #d1d1d11e;
+  }
+  .scheduel .scheduel-overlay .left-scheduel h3 {
+    font-weight: 400;
+    padding: 1rem 0;
+  }
+  .scheduel .scheduel-overlay .left-scheduel p {
+    color: #909090;
+  }
+  .scheduel .scheduel-overlay .left-scheduel button {
+    outline: none;
+    border: none;
+    padding: 8% 12%;
+    background-color: unset;
+    color: #ffffff;
+    font-size: 1rem;
+    text-wrap: nowrap;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 90%;
+    padding: 3% 0;
+    background-color: #f13a11;
+    font-weight: bold;
+    border-radius: 0.2rem;
+    margin-top: 1rem;
+  }
+  .scheduel .scheduel-overlay .right-scheduel {
+    width: 100%;
+  }
+  .scheduel .scheduel-overlay .right-scheduel li {
+    padding: 0.4rem 0;
+  }
+  .scheduel .scheduel-overlay .right-scheduel li p {
+    color: #909090;
+    padding-top: 0.3rem;
+  }
+}
