@@ -1,3 +1,338 @@
 @import "mixin.less";
 @import "variables.less";
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+// NAV *******************************************
+
+nav {
+    .desktop();
+    min-height: 10vh;
+    background-color: @black;
+
+    .nav-overlay {
+        .desktop-sizing();
+        .flex-box-sp();
+
+        .logo-nav {
+            width: 20%;
+
+            h2 {
+                font-family: @poppins;
+                .font-size();
+                color: @white;
+                transition: .3s linear;
+                text-wrap: nowrap;
+
+                &:hover {
+                    color: @red;
+                }
+            }
+        }
+
+        .menu-nav {
+            width: 65%;
+            .flex-box-end();
+
+            ul {
+                .flex-box-sp();
+                gap: 3rem;
+
+                li {
+                    &:hover {
+                        a {
+                            color: @red;
+                        }
+                    }
+
+                    &:first-child>a {
+                        color: @red;
+                    }
+
+                    a {
+                        .norm-text-tab();
+                        text-transform: uppercase;
+                        transition: .3s linear;
+                    }
+                }
+            }
+        }
+
+        .socials-nav {
+            width: 10%;
+
+            ul {
+                .flex-box-center();
+                gap: 1rem;
+
+                li {
+                    i {
+                        font-size: 1.3rem;
+                        color: @white;
+                        transition: .3s linear;
+                    }
+
+                    &:hover {
+                        i {
+                            color: @red;
+                        }
+                    }
+                }
+            }
+        }
+
+        .burger-nav {
+            display: none;
+        }
+    }
+
+    @media screen and (min-width:320px) and (max-width:1024px) {
+
+        .nav-overlay {
+            .tablet-sizing();
+            .flex-box-sp();
+
+            .logo-nav {
+                width: 50%;
+                .font-size();
+
+                h2 {
+                    font-family: @poppins;
+                    color: @white;
+                    transition: .3s linear;
+                    text-wrap: nowrap;
+
+                    &:hover {
+                        color: @red;
+                    }
+                }
+            }
+
+            .menu-nav {
+                display: none;
+            }
+
+            .socials-nav {
+                display: none;
+            }
+
+            .burger-nav {
+                .flex-box-end();
+                width: 50%;
+
+                i {
+                    font-size: 2.5rem;
+                    color: @red;
+                }
+            }
+        }
+    }
+}
+
+header {
+    .desktop();
+    min-height: 90vh;
+    background-image: url("../assets/header/hero-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .header-overlay {
+        min-height: inherit;
+        width: 100%;
+        background-color: @black-tr;
+        .flex-box-cc();
+        .font-size();
+        color: @white;
+        font-family: @roboto;
+        text-align: center;
+
+        h3 {
+            font-weight: 400;
+            color: @gray;
+            padding-bottom: 2.5rem;
+        }
+
+        .buttons {
+            .flex-box-center();
+            margin-top: 2.5rem;
+
+            button {
+                .button();
+            }
+
+            .left-btn {
+                &:hover {
+                    color: @red;
+                }
+            }
+
+            .right-btn {
+                border: 1px solid @red;
+                color: @red;
+                font-size: .9rem;
+                transition: .3s linear;
+
+                &:hover {
+                    background-color: @white;
+                    border-color: transparent;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width:320px) and (max-width:768px) {
+        .header-overlay {
+            padding: 0 1rem;
+
+            h3 {
+                font-weight: 400;
+                color: @gray;
+                padding-bottom: 2.5rem;
+                font-size: 1.2rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .buttons {
+                .flex-box-cc();
+            }
+        }
+    }
+}
+
+// SCHEDUEL *******************************************
+
+.scheduel {
+    .desktop();
+    min-height: 70vh;
+    background-color: @black;
+
+    .scheduel-overlay {
+        .flex-box-center();
+        gap: 3rem;
+        .font-size();
+        font-family: @poppins;
+        color: @white;
+
+        .left-scheduel {
+            width: 45%;
+            padding-right: 6%;
+            border-right: 2px solid @gray-tr;
+
+            h3 {
+                font-weight: 400;
+                padding: 1rem 0;
+            }
+
+            p {
+                color: @gray;
+            }
+
+            button {
+                .button();
+                width: 90%;
+                padding: 3% 0;
+                background-color: @red;
+                font-weight: bold;
+                border-radius: .2rem;
+                margin-top: 1rem;
+            }
+        }
+
+        .right-scheduel {
+            border-image-width: 50%;
+
+            li {
+                padding: .4rem 0;
+
+                p {
+                    color: @gray;
+                    padding-top: .3rem;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width:768px) and (max-width:1024px) {
+        .tablet();
+
+        .scheduel-overlay {
+            .tablet-sizing();
+            .flex-box-center();
+            gap: 3rem;
+        }
+    }
+
+    @media screen and (min-width:320px) and (max-width:768px) {
+        .mobile();
+
+        .scheduel-overlay {
+            .mobile-sizing();
+            .flex-box-cc();
+            gap: 3rem;
+            .font-size-mob();
+            font-family: @poppins;
+            color: @white;
+
+            .left-scheduel {
+                width: 100%;
+                padding: 0 0 1rem 0;
+                border-right: 0;
+                border-bottom: 2px solid @gray-tr;
+
+                h3 {
+                    font-weight: 400;
+                    padding: 1rem 0;
+                }
+
+                p {
+                    color: @gray;
+                }
+
+                button {
+                    .button();
+                    width: 90%;
+                    padding: 3% 0;
+                    background-color: @red;
+                    font-weight: bold;
+                    border-radius: .2rem;
+                    margin-top: 1rem;
+                }
+            }
+
+            .right-scheduel {
+                width: 100%;
+
+                li {
+                    padding: .4rem 0;
+
+                    p {
+                        color: @gray;
+                        padding-top: .3rem;
+                    }
+                }
+            }
+        }
+    }
+}
