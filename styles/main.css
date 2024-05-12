@@ -38,7 +38,7 @@
   min-height: 50vh;
 }
 .tablet-sizing {
-  width: 95%;
+  width: 85%;
 }
 .mobile {
   min-height: 100vh;
@@ -154,6 +154,7 @@ nav {
   left: 0;
   right: 0;
   top: 0;
+  z-index: 4;
 }
 nav .nav-overlay {
   width: 80%;
@@ -222,7 +223,7 @@ nav .nav-overlay .burger-nav {
 }
 @media screen and (min-width: 320px) and (max-width: 1024px) {
   nav .nav-overlay {
-    width: 95%;
+    width: 85%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -495,7 +496,7 @@ header .header-overlay .buttons .right-btn:hover {
     min-height: 50vh;
   }
   .scheduel .scheduel-overlay {
-    width: 95%;
+    width: 85%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -991,7 +992,7 @@ header .header-overlay .buttons .right-btn:hover {
     min-height: 87vh;
   }
   .class .class-overlay {
-    width: 80%;
+    width: 85%;
   }
   .class .class-overlay .class-title {
     margin-bottom: 3rem;
@@ -1066,6 +1067,7 @@ header .header-overlay .buttons .right-btn:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-wrap: nowrap;
   }
   .class .class-overlay .class-title h1 {
     font-size: 2.5rem;
@@ -1096,5 +1098,472 @@ header .header-overlay .buttons .right-btn:hover {
   }
   .class .class-overlay .class-cards .class-card {
     width: 95%;
+  }
+}
+.time-table {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #171819;
+}
+.time-table .time-table-overlay {
+  width: 80%;
+}
+.time-table .time-table-overlay .time-table-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+.time-table .time-table-overlay .time-table-title h1 {
+  font-size: 3rem;
+}
+.time-table .time-table-overlay .time-table-title h2 {
+  font-size: 2.5rem;
+  font-family: 'Poppins', sans-serif;
+}
+.time-table .time-table-overlay .time-table-title h3 {
+  font-size: 1.4rem;
+  font-family: 'Poppins', sans-serif;
+}
+.time-table .time-table-overlay .time-table-title p {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  color: #909090;
+  font-family: "Roboto", open-sans;
+}
+.time-table .time-table-overlay .time-table-title h6 {
+  font-size: 1rem;
+  color: #909090;
+  font-family: "Roboto", open-sans;
+  font-weight: 600;
+}
+.time-table .time-table-overlay .time-table-title h4 {
+  font-size: 1.125rem;
+  font-family: "Roboto", open-sans;
+}
+.time-table .time-table-overlay .time-table-title h5 {
+  font-size: 1.8rem;
+  font-family: 'Poppins', sans-serif;
+}
+.time-table .time-table-overlay .time-table-title h2 {
+  color: #ffffff;
+}
+.time-table .time-table-overlay .time-table-table table {
+  width: 100%;
+  color: #ffffff;
+}
+.time-table .time-table-overlay .time-table-table table h1 {
+  font-size: 3rem;
+}
+.time-table .time-table-overlay .time-table-table table h2 {
+  font-size: 2.5rem;
+  font-family: 'Poppins', sans-serif;
+}
+.time-table .time-table-overlay .time-table-table table h3 {
+  font-size: 1.4rem;
+  font-family: 'Poppins', sans-serif;
+}
+.time-table .time-table-overlay .time-table-table table p {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  color: #909090;
+  font-family: "Roboto", open-sans;
+}
+.time-table .time-table-overlay .time-table-table table h6 {
+  font-size: 1rem;
+  color: #909090;
+  font-family: "Roboto", open-sans;
+  font-weight: 600;
+}
+.time-table .time-table-overlay .time-table-table table h4 {
+  font-size: 1.125rem;
+  font-family: "Roboto", open-sans;
+}
+.time-table .time-table-overlay .time-table-table table h5 {
+  font-size: 1.8rem;
+  font-family: 'Poppins', sans-serif;
+}
+.time-table .time-table-overlay .time-table-table table p {
+  font-family: "Roboto", open-sans;
+  padding: 0.5rem 0;
+}
+.time-table .time-table-overlay .time-table-table table tr th {
+  background-color: #f13a11;
+  outline: none;
+  border-collapse: collapse;
+  padding: 1.5rem 0;
+  text-transform: uppercase;
+}
+.time-table .time-table-overlay .time-table-table table tr th i {
+  font-size: 1.1rem;
+}
+.time-table .time-table-overlay .time-table-table table tr td {
+  text-align: center;
+  border: 1px solid #212122;
+  border-collapse: collapse;
+  padding: 1rem;
+}
+.time-table .time-table-overlay .time-table-table table tr td h5 {
+  font-size: 0.95rem;
+  font-weight: 400;
+}
+.time-table .time-table-overlay .time-table-table table tr td p {
+  font-size: 0.95rem;
+}
+.time-table .time-table-overlay .time-table-table table tr td:first-child {
+  background-color: #f13a11;
+  padding: 1.5rem;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .time-table {
+    min-height: 75vh;
+  }
+  .time-table .time-table-overlay {
+    width: 95%;
+  }
+  .time-table .time-table-overlay .time-table-title h2 {
+    font-size: 2rem;
+    color: #ffffff;
+  }
+  .time-table .time-table-overlay .time-table-title p {
+    font-size: 1rem;
+  }
+  .time-table .time-table-overlay .time-table-table table p {
+    padding: 0.5rem 0;
+  }
+  .time-table .time-table-overlay .time-table-table table tr th {
+    padding: 1rem 0;
+  }
+  .time-table .time-table-overlay .time-table-table table tr td {
+    padding: 1rem;
+  }
+  .time-table .time-table-overlay .time-table-table table tr td:first-child {
+    background-color: #f13a11;
+    padding: 0 1.5rem;
+    text-wrap: nowrap;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .time-table {
+    min-height: 90vh;
+  }
+  .time-table .time-table-overlay {
+    width: 87%;
+  }
+  .time-table .time-table-overlay .time-table-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  .time-table .time-table-overlay .time-table-title h1 {
+    font-size: 2.5rem;
+  }
+  .time-table .time-table-overlay .time-table-title h2 {
+    font-size: 1.8rem;
+  }
+  .time-table .time-table-overlay .time-table-title h3 {
+    font-size: 1rem;
+  }
+  .time-table .time-table-overlay .time-table-title p {
+    font-size: 0.9rem;
+  }
+  .time-table .time-table-overlay .time-table-title h4 {
+    font-size: 0.9rem;
+  }
+  .time-table .time-table-overlay .time-table-title h2 {
+    color: #ffffff;
+  }
+  .time-table .time-table-overlay .time-table-table {
+    overflow-x: scroll;
+  }
+  .time-table .time-table-overlay .time-table-table table {
+    text-wrap: nowrap;
+  }
+  .time-table .time-table-overlay .time-table-table table h1 {
+    font-size: 2.5rem;
+  }
+  .time-table .time-table-overlay .time-table-table table h2 {
+    font-size: 1.8rem;
+  }
+  .time-table .time-table-overlay .time-table-table table h3 {
+    font-size: 1rem;
+  }
+  .time-table .time-table-overlay .time-table-table table p {
+    font-size: 0.9rem;
+  }
+  .time-table .time-table-overlay .time-table-table table h4 {
+    font-size: 0.9rem;
+  }
+  .time-table .time-table-overlay .time-table-table table tr th h6 {
+    font-size: 1.1rem;
+  }
+  .time-table .time-table-overlay .time-table-table table tr td {
+    text-align: center;
+  }
+  .time-table .time-table-overlay .time-table-table table tr td h5 {
+    font-size: 1rem;
+  }
+}
+.contact {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact .contact-overlay {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: stretch;
+  gap: 2rem;
+}
+.contact .contact-overlay h2 {
+  font-size: 2.3rem;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: -0.1rem;
+  margin-bottom: 2rem;
+}
+.contact .contact-overlay .left-contact {
+  width: 45%;
+}
+.contact .contact-overlay .left-contact form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+}
+.contact .contact-overlay .left-contact form input {
+  width: 100%;
+  outline: none;
+  border: 1px solid #ced4da;
+  margin-bottom: 1rem;
+  padding: 1.5rem 1rem;
+  border-radius: 0.15rem;
+}
+.contact .contact-overlay .left-contact form input::placeholder {
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  color: #495057;
+  font-weight: 500;
+  font-family: "Roboto", open-sans;
+}
+.contact .contact-overlay .left-contact form input:focus {
+  border: 1px solid #171819;
+}
+.contact .contact-overlay .left-contact form textarea {
+  width: 100%;
+  outline: none;
+  border: 1px solid #ced4da;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 0.15rem;
+  resize: vertical;
+}
+.contact .contact-overlay .left-contact form textarea::placeholder {
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  color: #495057;
+  font-weight: 500;
+  font-family: "Roboto", open-sans;
+}
+.contact .contact-overlay .left-contact form textarea:focus {
+  border: 1px solid #171819;
+}
+.contact .contact-overlay .left-contact form button {
+  width: 100%;
+  outline: none;
+  border: none;
+  background-color: #171819;
+  border-radius: 0.15rem;
+  margin-top: 1rem;
+  line-height: 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: "Roboto", open-sans;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 1rem;
+  transition: 0.3s linear;
+}
+.contact .contact-overlay .left-contact form button:hover {
+  background-color: #f13a11;
+}
+.contact .contact-overlay .right-contact {
+  width: 45%;
+}
+.contact .contact-overlay .right-contact p {
+  color: #495057;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  font-family: "Roboto", open-sans;
+  padding-bottom: 3rem;
+  border-bottom: 0.5px solid #ced4da;
+}
+.contact .contact-overlay .right-contact p i {
+  color: #f13a11;
+}
+.contact .contact-overlay .right-contact #my-iframe {
+  margin: 2rem 0;
+  width: 100%;
+  height: 65%;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .contact {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+  }
+  .contact .contact-overlay {
+    width: 85%;
+  }
+  .contact .contact-overlay h2 {
+    font-size: 1.8rem;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: -0.1rem;
+    margin-bottom: 2rem;
+    text-wrap: nowrap;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .contact .contact-overlay {
+    padding: 2rem 0;
+    width: 87%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+  .contact .contact-overlay h2 {
+    font-size: 1.8rem;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: -0.1rem;
+    margin-bottom: 2rem;
+    text-wrap: nowrap;
+  }
+  .contact .contact-overlay .left-contact {
+    width: 100%;
+  }
+  .contact .contact-overlay .right-contact {
+    width: 100%;
+  }
+  .contact .contact-overlay .right-contact #my-iframe {
+    margin: 2rem 0;
+    width: 100%;
+    height: 30vh;
+  }
+}
+footer {
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #ced4da;
+}
+footer .footer-overlay {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+footer .footer-overlay h1 {
+  font-size: 3rem;
+}
+footer .footer-overlay h2 {
+  font-size: 2.5rem;
+  font-family: 'Poppins', sans-serif;
+}
+footer .footer-overlay h3 {
+  font-size: 1.4rem;
+  font-family: 'Poppins', sans-serif;
+}
+footer .footer-overlay p {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  color: #909090;
+  font-family: "Roboto", open-sans;
+}
+footer .footer-overlay h6 {
+  font-size: 1rem;
+  color: #909090;
+  font-family: "Roboto", open-sans;
+  font-weight: 600;
+}
+footer .footer-overlay h4 {
+  font-size: 1.125rem;
+  font-family: "Roboto", open-sans;
+}
+footer .footer-overlay h5 {
+  font-size: 1.8rem;
+  font-family: 'Poppins', sans-serif;
+}
+footer .footer-overlay ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+footer .footer-overlay ul > :first-child i {
+  font-size: 1.2rem;
+}
+footer .footer-overlay ul i {
+  font-size: 1rem;
+  color: #f13a11;
+}
+footer .footer-overlay ul a {
+  margin-left: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #909090;
+  font-family: "Roboto", open-sans;
+}
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+  footer {
+    min-height: 17vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .footer-overlay {
+    width: 87%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  footer .footer-overlay h1 {
+    font-size: 2.5rem;
+  }
+  footer .footer-overlay h2 {
+    font-size: 1.8rem;
+  }
+  footer .footer-overlay h3 {
+    font-size: 1rem;
+  }
+  footer .footer-overlay p {
+    font-size: 0.9rem;
+  }
+  footer .footer-overlay h4 {
+    font-size: 0.9rem;
+  }
+  footer .footer-overlay ul a {
+    font-size: 0.9rem;
   }
 }
