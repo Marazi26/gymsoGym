@@ -295,7 +295,6 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 90vh;
   background-image: url("../assets/header/hero-bg.jpg");
   background-position: center;
   background-size: cover;
@@ -405,7 +404,7 @@ header .header-overlay .buttons .right-btn:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 70vh;
+  min-height: 73vh;
   background-color: #171819;
 }
 .scheduel .scheduel-overlay {
