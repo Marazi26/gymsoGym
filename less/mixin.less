@@ -1,1 +1,138 @@
 @import "variables.less";
+
+.flex-box-sp{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-box-center{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.flex-box-end{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+ 
+.flex-box-cc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.desktop{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+}
+.desktop-sizing{
+    width: 80%;
+}
+.tablet {
+    .desktop();
+    min-height: 50vh;
+}
+.tablet-sizing{
+    width: 85%;
+}
+.mobile{
+    .desktop();
+    min-height: 65vh;
+}
+.mobile-sizing{
+    width: 87%;
+}
+
+.font-size{
+
+    h1{
+        font-size: 3rem;
+    }
+    h2{
+        font-size: 2.5rem;
+        font-family: @poppins;
+    }
+    h3{
+        font-size: 1.4rem;
+        font-family: @poppins;
+    }
+    p{
+        font-size: 1.125rem;
+        line-height: 1.5rem;
+        color: @gray;
+        font-family: @roboto;
+    }
+    h6{
+        font-size: 1rem;
+        color: @gray;
+        font-family: @roboto;
+        font-weight: 600;
+    }
+    h4{
+        font-size: 1.125rem;
+        font-family: @roboto;
+    }
+    h5{
+        font-size: 1.8rem;
+        font-family: @poppins;
+    }
+}
+.font-size-mob{
+    h1{
+        font-size: 2.5rem;
+    }
+    h2{
+        font-size: 1.8rem;
+    }
+    h3{
+        font-size: 1rem;
+    }
+    p{
+        font-size: .9rem;
+    }
+    h4{
+        font-size: .9rem;
+    }
+}
+.norm-text{
+    font-size: 1.125rem;
+    line-height: 1.3rem;
+    font-family: @roboto;
+    color: @white;
+}
+
+.norm-text-tab{
+    font-size: 1rem;
+    line-height: 1.1rem;
+    font-family: @roboto;
+    color: @white;
+}
+
+.norm-text-mob{
+    font-size: .9rem;
+    line-height: 1rem;
+    font-family: @roboto;
+    color: @white;
+}
+
+.button{
+    outline: none;
+    border: none;
+    padding: 8% 12%;
+    background-color: unset;
+    color: @white;
+    font-size: 1rem;
+    text-wrap: nowrap;
+    text-transform: uppercase;
+    cursor: pointer;
+}

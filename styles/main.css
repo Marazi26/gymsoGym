@@ -1,0 +1,1584 @@
+.flex-box-sp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-box-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-box-end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.flex-box-cc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.desktop {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-y: hidden;
+}
+.desktop-sizing {
+  width: 80%;
+}
+.tablet {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-y: hidden;
+  min-height: 50vh;
+}
+.tablet-sizing {
+  width: 85%;
+}
+.mobile {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-y: hidden;
+  min-height: 65vh;
+}
+.mobile-sizing {
+  width: 87%;
+}
+.font-size h1 {
+  font-size: 3rem;
+}
+.font-size h2 {
+  font-size: 2.5rem;
+  font-family: 'Poppins', sans-serif;
+}
+.font-size h3 {
+  font-size: 1.4rem;
+  font-family: 'Poppins', sans-serif;
+}
+.font-size p {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  color: #909090;
+  font-family: "Roboto", open-sans;
+}
+.font-size h6 {
+  font-size: 1rem;
+  color: #909090;
+  font-family: "Roboto", open-sans;
+  font-weight: 600;
+}
+.font-size h4 {
+  font-size: 1.125rem;
+  font-family: "Roboto", open-sans;
+}
+.font-size h5 {
+  font-size: 1.8rem;
+  font-family: 'Poppins', sans-serif;
+}
+.font-size-mob h1 {
+  font-size: 2.5rem;
+}
+.font-size-mob h2 {
+  font-size: 1.8rem;
+}
+.font-size-mob h3 {
+  font-size: 1rem;
+}
+.font-size-mob p {
+  font-size: 0.9rem;
+}
+.font-size-mob h4 {
+  font-size: 0.9rem;
+}
+.norm-text {
+  font-size: 1.125rem;
+  line-height: 1.3rem;
+  font-family: "Roboto", open-sans;
+  color: #ffffff;
+}
+.norm-text-tab {
+  font-size: 1rem;
+  line-height: 1.1rem;
+  font-family: "Roboto", open-sans;
+  color: #ffffff;
+}
+.norm-text-mob {
+  font-size: 0.9rem;
+  line-height: 1rem;
+  font-family: "Roboto", open-sans;
+  color: #ffffff;
+}
+.button {
+  outline: none;
+  border: none;
+  padding: 8% 12%;
+  background-color: unset;
+  color: #ffffff;
+  font-size: 1rem;
+  text-wrap: nowrap;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+}
+nav {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-y: hidden;
+  min-height: 10vh;
+  background-color: #171819;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 4;
+}
+nav .nav-overlay {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .nav-overlay .logo-nav {
+  width: 18%;
+}
+nav .nav-overlay .logo-nav h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem;
+  color: #ffffff;
+  transition: 0.3s linear;
+  text-wrap: nowrap;
+}
+nav .nav-overlay .logo-nav h2:hover {
+  color: #f13a11;
+}
+nav .nav-overlay .menu-nav {
+  width: 67%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav .nav-overlay .menu-nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+nav .nav-overlay .menu-nav ul li:hover a {
+  color: #f13a11;
+}
+nav .nav-overlay .menu-nav ul li:first-child > a {
+  color: #f13a11;
+}
+nav .nav-overlay .menu-nav ul li a {
+  font-size: 1rem;
+  line-height: 1.1rem;
+  font-family: "Roboto", open-sans;
+  color: #ffffff;
+  text-transform: uppercase;
+  transition: 0.3s linear;
+}
+nav .nav-overlay .socials-nav {
+  width: 10%;
+}
+nav .nav-overlay .socials-nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+nav .nav-overlay .socials-nav ul li i {
+  font-size: 1.3rem;
+  color: #ffffff;
+  transition: 0.3s linear;
+}
+nav .nav-overlay .socials-nav ul li:hover i {
+  color: #f13a11;
+}
+nav .nav-overlay .burger-nav {
+  display: none;
+}
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+  nav .nav-overlay {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav .nav-overlay .logo-nav {
+    width: 50%;
+  }
+  nav .nav-overlay .logo-nav h1 {
+    font-size: 3rem;
+  }
+  nav .nav-overlay .logo-nav h2 {
+    font-size: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+  }
+  nav .nav-overlay .logo-nav h3 {
+    font-size: 1.4rem;
+    font-family: 'Poppins', sans-serif;
+  }
+  nav .nav-overlay .logo-nav p {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    color: #909090;
+    font-family: "Roboto", open-sans;
+  }
+  nav .nav-overlay .logo-nav h6 {
+    font-size: 1rem;
+    color: #909090;
+    font-family: "Roboto", open-sans;
+    font-weight: 600;
+  }
+  nav .nav-overlay .logo-nav h4 {
+    font-size: 1.125rem;
+    font-family: "Roboto", open-sans;
+  }
+  nav .nav-overlay .logo-nav h5 {
+    font-size: 1.8rem;
+    font-family: 'Poppins', sans-serif;
+  }
+  nav .nav-overlay .logo-nav h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    transition: 0.3s linear;
+    text-wrap: nowrap;
+    font-size: 1.5rem;
+  }
+  nav .nav-overlay .logo-nav h2:hover {
+    color: #f13a11;
+  }
+  nav .nav-overlay .menu-nav {
+    display: none;
+  }
+  nav .nav-overlay .socials-nav {
+    display: none;
+  }
+  nav .nav-overlay .burger-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+  }
+  nav .nav-overlay .burger-nav i {
+    font-size: 2rem;
+    color: #f13a11;
+  }
+}
+header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-y: hidden;
+  background-image: url("../assets/header/hero-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+header .header-overlay {
+  min-height: inherit;
+  width: 100%;
+  background-color: #171819d0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-family: "Roboto", open-sans;
+  text-align: center;
+}
+header .header-overlay h1 {
+  font-size: 3rem;
+}
+header .header-overlay h2 {
+  font-size: 2.5rem;
+  font-family: 'Poppins', sans-serif;
+}
+header .header-overlay h3 {
+  font-size: 1.4rem;
+  font-family: 'Poppins', sans-serif;
+}
+header .header-overlay p {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  color: #909090;
+  font-family: "Roboto", open-sans;
+}
+header .header-overlay h6 {
+  font-size: 1rem;
+  color: #909090;
+  font-family: "Roboto", open-sans;
+  font-weight: 600;
+}
+header .header-overlay h4 {
+  font-size: 1.125rem;
+  font-family: "Roboto", open-sans;
+}
+header .header-overlay h5 {
+  font-size: 1.8rem;
+  font-family: 'Poppins', sans-serif;
+}
+header .header-overlay h3 {
+  font-weight: 400;
+  color: #909090;
+  padding-bottom: 2.5rem;
+}
+header .header-overlay .buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.5rem;
+}
+header .header-overlay .buttons button {
+  outline: none;
+  border: none;
+  padding: 8% 12%;
+  background-color: unset;
+  color: #ffffff;
+  font-size: 1rem;
+  text-wrap: nowrap;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+header .header-overlay .buttons .left-btn:hover {
+  color: #f13a11;
+}
+header .header-overlay .buttons .right-btn {
+  border: 1px solid #f13a11;
+  color: #f13a11;
+  font-size: 0.9rem;
+  transition: 0.3s linear;
+}
+header .header-overlay .buttons .right-btn:hover {
+  background-color: #ffffff;
+  border-color: transparent;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  header .header-overlay {
+    padding: 0 1rem;
+  }
+  header .header-overlay h3 {
+    font-weight: 400;
+    color: #909090;
+    padding-bottom: 2.5rem;
+    font-size: 1.2rem;
+  }
+  header .header-overlay h1 {
+    font-size: 2rem;
+  }
+  header .header-overlay .buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.scheduel {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-y: hidden;
+  min-height: 73vh;
+  background-color: #171819;
+}
+.scheduel .scheduel-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+}
+.scheduel .scheduel-overlay h1 {
+  font-size: 3rem;
+}
+.scheduel .scheduel-overlay h2 {
+  font-size: 2.5rem;
+  font-family: 'Poppins', sans-serif;
+}
+.scheduel .scheduel-overlay h3 {
+  font-size: 1.4rem;
+  font-family: 'Poppins', sans-serif;
+}
+.scheduel .scheduel-overlay p {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  color: #909090;
+  font-family: "Roboto", open-sans;
+}
+.scheduel .scheduel-overlay h6 {
+  font-size: 1rem;
+  color: #909090;
+  font-family: "Roboto", open-sans;
+  font-weight: 600;
+}
+.scheduel .scheduel-overlay h4 {
+  font-size: 1.125rem;
+  font-family: "Roboto", open-sans;
+}
+.scheduel .scheduel-overlay h5 {
+  font-size: 1.8rem;
+  font-family: 'Poppins', sans-serif;
+}
+.scheduel .scheduel-overlay .left-scheduel {
+  width: 45%;
+  padding-right: 6%;
+  border-right: 2px solid #d1d1d11e;
+}
+.scheduel .scheduel-overlay .left-scheduel h3 {
+  font-weight: 400;
+  padding: 1rem 0;
+}
+.scheduel .scheduel-overlay .left-scheduel p {
+  color: #909090;
+}
+.scheduel .scheduel-overlay .left-scheduel button {
+  outline: none;
+  border: none;
+  padding: 8% 12%;
+  background-color: unset;
+  color: #ffffff;
+  font-size: 1rem;
+  text-wrap: nowrap;
+  text-transform: uppercase;
+  cursor: pointer;
+  width: 90%;
+  padding: 3% 0;
+  background-color: #f13a11;
+  font-weight: bold;
+  border-radius: 0.2rem;
+  margin-top: 1rem;
+}
+.scheduel .scheduel-overlay .right-scheduel {
+  border-image-width: 50%;
+}
+.scheduel .scheduel-overlay .right-scheduel li {
+  padding: 0.4rem 0;
+}
+.scheduel .scheduel-overlay .right-scheduel li p {
+  color: #909090;
+  padding-top: 0.3rem;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .scheduel {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+    min-height: 50vh;
+  }
+  .scheduel .scheduel-overlay {
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+  .scheduel .scheduel-overlay h2 {
+    font-size: 2rem;
+  }
+  .scheduel .scheduel-overlay p {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .scheduel {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+    min-height: 65vh;
+    min-height: 90vh;
+  }
+  .scheduel .scheduel-overlay {
+    width: 87%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+  }
+  .scheduel .scheduel-overlay h1 {
+    font-size: 2.5rem;
+  }
+  .scheduel .scheduel-overlay h2 {
+    font-size: 1.8rem;
+  }
+  .scheduel .scheduel-overlay h3 {
+    font-size: 1rem;
+  }
+  .scheduel .scheduel-overlay p {
+    font-size: 0.9rem;
+  }
+  .scheduel .scheduel-overlay h4 {
+    font-size: 0.9rem;
+  }
+  .scheduel .scheduel-overlay .left-scheduel {
+    width: 100%;
+    padding: 0 0 1rem 0;
+    border-right: 0;
+    border-bottom: 2px solid #d1d1d11e;
+  }
+  .scheduel .scheduel-overlay .left-scheduel h3 {
+    font-weight: 400;
+    padding: 1rem 0;
+  }
+  .scheduel .scheduel-overlay .left-scheduel p {
+    color: #909090;
+  }
+  .scheduel .scheduel-overlay .left-scheduel button {
+    outline: none;
+    border: none;
+    padding: 8% 12%;
+    background-color: unset;
+    color: #ffffff;
+    font-size: 1rem;
+    text-wrap: nowrap;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 90%;
+    padding: 3% 0;
+    background-color: #f13a11;
+    font-weight: bold;
+    border-radius: 0.2rem;
+    margin-top: 1rem;
+  }
+  .scheduel .scheduel-overlay .right-scheduel {
+    width: 100%;
+  }
+  .scheduel .scheduel-overlay .right-scheduel li {
+    padding: 0.4rem 0;
+  }
+  .scheduel .scheduel-overlay .right-scheduel li p {
+    color: #909090;
+    padding-top: 0.3rem;
+  }
+}
+.about {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-y: hidden;
+  min-height: 70vh;
+  background-color: #f9f9f9;
+}
+.about .about-overlay {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about .about-overlay .about-info {
+  width: 47%;
+  font-family: 'Poppins', sans-serif;
+}
+.about .about-overlay .about-info h1 {
+  font-size: 3rem;
+}
+.about .about-overlay .about-info h2 {
+  font-size: 2.5rem;
+  font-family: 'Poppins', sans-serif;
+}
+.about .about-overlay .about-info h3 {
+  font-size: 1.4rem;
+  font-family: 'Poppins', sans-serif;
+}
+.about .about-overlay .about-info p {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  color: #909090;
+  font-family: "Roboto", open-sans;
+}
+.about .about-overlay .about-info h6 {
+  font-size: 1rem;
+  color: #909090;
+  font-family: "Roboto", open-sans;
+  font-weight: 600;
+}
+.about .about-overlay .about-info h4 {
+  font-size: 1.125rem;
+  font-family: "Roboto", open-sans;
+}
+.about .about-overlay .about-info h5 {
+  font-size: 1.8rem;
+  font-family: 'Poppins', sans-serif;
+}
+.about .about-overlay .about-info p {
+  font-size: 1.25rem;
+  padding: 1rem 0;
+  width: 80%;
+}
+.about .about-overlay .about-cards {
+  width: 52%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.about .about-overlay .about-cards h1 {
+  font-size: 3rem;
+}
+.about .about-overlay .about-cards h2 {
+  font-size: 2.5rem;
+  font-family: 'Poppins', sans-serif;
+}
+.about .about-overlay .about-cards h3 {
+  font-size: 1.4rem;
+  font-family: 'Poppins', sans-serif;
+}
+.about .about-overlay .about-cards p {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  color: #909090;
+  font-family: "Roboto", open-sans;
+}
+.about .about-overlay .about-cards h6 {
+  font-size: 1rem;
+  color: #909090;
+  font-family: "Roboto", open-sans;
+  font-weight: 600;
+}
+.about .about-overlay .about-cards h4 {
+  font-size: 1.125rem;
+  font-family: "Roboto", open-sans;
+}
+.about .about-overlay .about-cards h5 {
+  font-size: 1.8rem;
+  font-family: 'Poppins', sans-serif;
+}
+.about .about-overlay .about-cards .about-card {
+  box-shadow: rgba(255, 255, 255, 0.2) 0 8px 24px;
+  width: 50%;
+}
+.about .about-overlay .about-cards .about-card .about-card-info {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about .about-overlay .about-cards .about-card .about-card-info ul i {
+  color: #909090;
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .about {
+    min-width: 65h;
+  }
+  .about .about-overlay {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .about .about-overlay .about-info {
+    width: 85%;
+    font-family: 'Poppins', sans-serif;
+  }
+  .about .about-overlay .about-info h1 {
+    font-size: 3rem;
+  }
+  .about .about-overlay .about-info h2 {
+    font-size: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+  }
+  .about .about-overlay .about-info h3 {
+    font-size: 1.4rem;
+    font-family: 'Poppins', sans-serif;
+  }
+  .about .about-overlay .about-info p {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    color: #909090;
+    font-family: "Roboto", open-sans;
+  }
+  .about .about-overlay .about-info h6 {
+    font-size: 1rem;
+    color: #909090;
+    font-family: "Roboto", open-sans;
+    font-weight: 600;
+  }
+  .about .about-overlay .about-info h4 {
+    font-size: 1.125rem;
+    font-family: "Roboto", open-sans;
+  }
+  .about .about-overlay .about-info h5 {
+    font-size: 1.8rem;
+    font-family: 'Poppins', sans-serif;
+  }
+  .about .about-overlay .about-info h2 {
+    font-size: 2rem;
+  }
+  .about .about-overlay .about-info p {
+    font-size: 1.1rem;
+    padding: 1rem 0;
+    width: 100%;
+  }
+  .about .about-overlay .about-cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+  }
+  .about .about-overlay .about-cards h1 {
+    font-size: 3rem;
+  }
+  .about .about-overlay .about-cards h2 {
+    font-size: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+  }
+  .about .about-overlay .about-cards h3 {
+    font-size: 1.4rem;
+    font-family: 'Poppins', sans-serif;
+  }
+  .about .about-overlay .about-cards p {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    color: #909090;
+    font-family: "Roboto", open-sans;
+  }
+  .about .about-overlay .about-cards h6 {
+    font-size: 1rem;
+    color: #909090;
+    font-family: "Roboto", open-sans;
+    font-weight: 600;
+  }
+  .about .about-overlay .about-cards h4 {
+    font-size: 1.125rem;
+    font-family: "Roboto", open-sans;
+  }
+  .about .about-overlay .about-cards h5 {
+    font-size: 1.8rem;
+    font-family: 'Poppins', sans-serif;
+  }
+  .about .about-overlay .about-cards .about-card {
+    box-shadow: rgba(189, 189, 189, 0.2) 0 8px 24px;
+  }
+  .about .about-overlay .about-cards .about-card .about-card-info {
+    border-top: none;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .about {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+  }
+  .about .about-overlay {
+    padding: 2rem 0;
+    width: 87%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .about .about-overlay .about-info {
+    width: 90%;
+    font-family: 'Poppins', sans-serif;
+  }
+  .about .about-overlay .about-info h1 {
+    font-size: 2.5rem;
+  }
+  .about .about-overlay .about-info h2 {
+    font-size: 1.8rem;
+  }
+  .about .about-overlay .about-info h3 {
+    font-size: 1rem;
+  }
+  .about .about-overlay .about-info p {
+    font-size: 0.9rem;
+  }
+  .about .about-overlay .about-info h4 {
+    font-size: 0.9rem;
+  }
+  .about .about-overlay .about-info h2 {
+    font-size: 2rem;
+  }
+  .about .about-overlay .about-info p {
+    padding: 1rem 0;
+    width: 100%;
+  }
+  .about .about-overlay .about-cards {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .about .about-overlay .about-cards h1 {
+    font-size: 2.5rem;
+  }
+  .about .about-overlay .about-cards h2 {
+    font-size: 1.8rem;
+  }
+  .about .about-overlay .about-cards h3 {
+    font-size: 1rem;
+  }
+  .about .about-overlay .about-cards p {
+    font-size: 0.9rem;
+  }
+  .about .about-overlay .about-cards h4 {
+    font-size: 0.9rem;
+  }
+  .about .about-overlay .about-cards .about-card {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    width: 100%;
+  }
+  .about .about-overlay .about-cards .about-card .about-card-info {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .about .about-overlay .about-cards .about-card .about-card-info ul i {
+    color: #909090;
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
+  }
+}
+.class {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-y: hidden;
+}
+.class .class-overlay {
+  width: 80%;
+}
+.class .class-overlay .class-title {
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.class .class-overlay .class-title h1 {
+  font-size: 3rem;
+}
+.class .class-overlay .class-title h2 {
+  font-size: 2.5rem;
+  font-family: 'Poppins', sans-serif;
+}
+.class .class-overlay .class-title h3 {
+  font-size: 1.4rem;
+  font-family: 'Poppins', sans-serif;
+}
+.class .class-overlay .class-title p {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  color: #909090;
+  font-family: "Roboto", open-sans;
+}
+.class .class-overlay .class-title h6 {
+  font-size: 1rem;
+  color: #909090;
+  font-family: "Roboto", open-sans;
+  font-weight: 600;
+}
+.class .class-overlay .class-title h4 {
+  font-size: 1.125rem;
+  font-family: "Roboto", open-sans;
+}
+.class .class-overlay .class-title h5 {
+  font-size: 1.8rem;
+  font-family: 'Poppins', sans-serif;
+}
+.class .class-overlay .class-title p {
+  font-family: 'Poppins', sans-serif;
+}
+.class .class-overlay .class-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.class .class-overlay .class-cards .class-card {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.class .class-overlay .class-cards .class-card .class-card-info {
+  position: relative;
+  padding: 1rem 2rem;
+}
+.class .class-overlay .class-cards .class-card .class-card-info h1 {
+  font-size: 3rem;
+}
+.class .class-overlay .class-cards .class-card .class-card-info h2 {
+  font-size: 2.5rem;
+  font-family: 'Poppins', sans-serif;
+}
+.class .class-overlay .class-cards .class-card .class-card-info h3 {
+  font-size: 1.4rem;
+  font-family: 'Poppins', sans-serif;
+}
+.class .class-overlay .class-cards .class-card .class-card-info p {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  color: #909090;
+  font-family: "Roboto", open-sans;
+}
+.class .class-overlay .class-cards .class-card .class-card-info h6 {
+  font-size: 1rem;
+  color: #909090;
+  font-family: "Roboto", open-sans;
+  font-weight: 600;
+}
+.class .class-overlay .class-cards .class-card .class-card-info h4 {
+  font-size: 1.125rem;
+  font-family: "Roboto", open-sans;
+}
+.class .class-overlay .class-cards .class-card .class-card-info h5 {
+  font-size: 1.8rem;
+  font-family: 'Poppins', sans-serif;
+}
+.class .class-overlay .class-cards .class-card .class-card-info h6 {
+  padding: 0.5rem 0;
+}
+.class .class-overlay .class-cards .class-card .class-card-info h6 span {
+  color: #171819;
+}
+.class .class-overlay .class-cards .class-card .class-card-info p {
+  padding: 1rem 0;
+}
+.class .class-overlay .class-cards .class-card .class-card-info h4 {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  background-color: #f13a11;
+  padding: 1.2rem 1rem;
+  border-radius: 50%;
+  color: #ffffff;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .class {
+    min-height: 87vh;
+  }
+  .class .class-overlay {
+    width: 85%;
+  }
+  .class .class-overlay .class-title {
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .class .class-overlay .class-title h1 {
+    font-size: 3rem;
+  }
+  .class .class-overlay .class-title h2 {
+    font-size: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+  }
+  .class .class-overlay .class-title h3 {
+    font-size: 1.4rem;
+    font-family: 'Poppins', sans-serif;
+  }
+  .class .class-overlay .class-title p {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    color: #909090;
+    font-family: "Roboto", open-sans;
+  }
+  .class .class-overlay .class-title h6 {
+    font-size: 1rem;
+    color: #909090;
+    font-family: "Roboto", open-sans;
+    font-weight: 600;
+  }
+  .class .class-overlay .class-title h4 {
+    font-size: 1.125rem;
+    font-family: "Roboto", open-sans;
+  }
+  .class .class-overlay .class-title h5 {
+    font-size: 1.8rem;
+    font-family: 'Poppins', sans-serif;
+  }
+  .class .class-overlay .class-title h2 {
+    font-size: 2rem;
+  }
+  .class .class-overlay .class-title p {
+    font-family: 'Poppins', sans-serif;
+  }
+  .class .class-overlay .class-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .class .class-overlay .class-cards .class-card {
+    width: 47%;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .class {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+  }
+  .class .class-overlay {
+    padding: 2rem 0;
+    width: 80%;
+  }
+  .class .class-overlay .class-title {
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-wrap: nowrap;
+  }
+  .class .class-overlay .class-title h1 {
+    font-size: 2.5rem;
+  }
+  .class .class-overlay .class-title h2 {
+    font-size: 1.8rem;
+  }
+  .class .class-overlay .class-title h3 {
+    font-size: 1rem;
+  }
+  .class .class-overlay .class-title p {
+    font-size: 0.9rem;
+  }
+  .class .class-overlay .class-title h4 {
+    font-size: 0.9rem;
+  }
+  .class .class-overlay .class-title p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.15rem;
+  }
+  .class .class-overlay .class-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .class .class-overlay .class-cards .class-card {
+    width: 95%;
+  }
+}
+.time-table {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-y: hidden;
+  background-color: #171819;
+}
+.time-table .time-table-overlay {
+  width: 80%;
+}
+.time-table .time-table-overlay .time-table-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+.time-table .time-table-overlay .time-table-title h1 {
+  font-size: 3rem;
+}
+.time-table .time-table-overlay .time-table-title h2 {
+  font-size: 2.5rem;
+  font-family: 'Poppins', sans-serif;
+}
+.time-table .time-table-overlay .time-table-title h3 {
+  font-size: 1.4rem;
+  font-family: 'Poppins', sans-serif;
+}
+.time-table .time-table-overlay .time-table-title p {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  color: #909090;
+  font-family: "Roboto", open-sans;
+}
+.time-table .time-table-overlay .time-table-title h6 {
+  font-size: 1rem;
+  color: #909090;
+  font-family: "Roboto", open-sans;
+  font-weight: 600;
+}
+.time-table .time-table-overlay .time-table-title h4 {
+  font-size: 1.125rem;
+  font-family: "Roboto", open-sans;
+}
+.time-table .time-table-overlay .time-table-title h5 {
+  font-size: 1.8rem;
+  font-family: 'Poppins', sans-serif;
+}
+.time-table .time-table-overlay .time-table-title h2 {
+  color: #ffffff;
+}
+.time-table .time-table-overlay .time-table-table table {
+  width: 100%;
+  color: #ffffff;
+}
+.time-table .time-table-overlay .time-table-table table h1 {
+  font-size: 3rem;
+}
+.time-table .time-table-overlay .time-table-table table h2 {
+  font-size: 2.5rem;
+  font-family: 'Poppins', sans-serif;
+}
+.time-table .time-table-overlay .time-table-table table h3 {
+  font-size: 1.4rem;
+  font-family: 'Poppins', sans-serif;
+}
+.time-table .time-table-overlay .time-table-table table p {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  color: #909090;
+  font-family: "Roboto", open-sans;
+}
+.time-table .time-table-overlay .time-table-table table h6 {
+  font-size: 1rem;
+  color: #909090;
+  font-family: "Roboto", open-sans;
+  font-weight: 600;
+}
+.time-table .time-table-overlay .time-table-table table h4 {
+  font-size: 1.125rem;
+  font-family: "Roboto", open-sans;
+}
+.time-table .time-table-overlay .time-table-table table h5 {
+  font-size: 1.8rem;
+  font-family: 'Poppins', sans-serif;
+}
+.time-table .time-table-overlay .time-table-table table p {
+  font-family: "Roboto", open-sans;
+  padding: 0.5rem 0;
+}
+.time-table .time-table-overlay .time-table-table table tr th {
+  background-color: #f13a11;
+  outline: none;
+  border-collapse: collapse;
+  padding: 1.5rem 0;
+  text-transform: uppercase;
+}
+.time-table .time-table-overlay .time-table-table table tr th i {
+  font-size: 1.1rem;
+}
+.time-table .time-table-overlay .time-table-table table tr td {
+  text-align: center;
+  border: 1px solid #212122;
+  border-collapse: collapse;
+  padding: 1rem;
+}
+.time-table .time-table-overlay .time-table-table table tr td h5 {
+  font-size: 0.95rem;
+  font-weight: 400;
+}
+.time-table .time-table-overlay .time-table-table table tr td p {
+  font-size: 0.95rem;
+}
+.time-table .time-table-overlay .time-table-table table tr td:first-child {
+  background-color: #f13a11;
+  padding: 1.5rem;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .time-table {
+    min-height: 75vh;
+  }
+  .time-table .time-table-overlay {
+    width: 95%;
+  }
+  .time-table .time-table-overlay .time-table-title h2 {
+    font-size: 2rem;
+    color: #ffffff;
+  }
+  .time-table .time-table-overlay .time-table-title p {
+    font-size: 1rem;
+  }
+  .time-table .time-table-overlay .time-table-table table p {
+    padding: 0.5rem 0;
+  }
+  .time-table .time-table-overlay .time-table-table table tr th {
+    padding: 1rem 0;
+  }
+  .time-table .time-table-overlay .time-table-table table tr td {
+    padding: 1rem;
+  }
+  .time-table .time-table-overlay .time-table-table table tr td:first-child {
+    background-color: #f13a11;
+    padding: 0 1.5rem;
+    text-wrap: nowrap;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .time-table {
+    min-height: 90vh;
+  }
+  .time-table .time-table-overlay {
+    width: 87%;
+  }
+  .time-table .time-table-overlay .time-table-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  .time-table .time-table-overlay .time-table-title h1 {
+    font-size: 2.5rem;
+  }
+  .time-table .time-table-overlay .time-table-title h2 {
+    font-size: 1.8rem;
+  }
+  .time-table .time-table-overlay .time-table-title h3 {
+    font-size: 1rem;
+  }
+  .time-table .time-table-overlay .time-table-title p {
+    font-size: 0.9rem;
+  }
+  .time-table .time-table-overlay .time-table-title h4 {
+    font-size: 0.9rem;
+  }
+  .time-table .time-table-overlay .time-table-title h2 {
+    color: #ffffff;
+  }
+  .time-table .time-table-overlay .time-table-table {
+    overflow-x: scroll;
+  }
+  .time-table .time-table-overlay .time-table-table table {
+    text-wrap: nowrap;
+  }
+  .time-table .time-table-overlay .time-table-table table h1 {
+    font-size: 2.5rem;
+  }
+  .time-table .time-table-overlay .time-table-table table h2 {
+    font-size: 1.8rem;
+  }
+  .time-table .time-table-overlay .time-table-table table h3 {
+    font-size: 1rem;
+  }
+  .time-table .time-table-overlay .time-table-table table p {
+    font-size: 0.9rem;
+  }
+  .time-table .time-table-overlay .time-table-table table h4 {
+    font-size: 0.9rem;
+  }
+  .time-table .time-table-overlay .time-table-table table tr th h6 {
+    font-size: 1.1rem;
+  }
+  .time-table .time-table-overlay .time-table-table table tr td {
+    text-align: center;
+  }
+  .time-table .time-table-overlay .time-table-table table tr td h5 {
+    font-size: 1rem;
+  }
+}
+.contact {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-y: hidden;
+}
+.contact .contact-overlay {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: stretch;
+  gap: 2rem;
+}
+.contact .contact-overlay h2 {
+  font-size: 2.3rem;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: -0.1rem;
+  margin-bottom: 2rem;
+}
+.contact .contact-overlay .left-contact {
+  width: 45%;
+}
+.contact .contact-overlay .left-contact form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+}
+.contact .contact-overlay .left-contact form input {
+  width: 100%;
+  outline: none;
+  border: 1px solid #ced4da;
+  margin-bottom: 1rem;
+  padding: 1.5rem 1rem;
+  border-radius: 0.15rem;
+}
+.contact .contact-overlay .left-contact form input::placeholder {
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  color: #495057;
+  font-weight: 500;
+  font-family: "Roboto", open-sans;
+}
+.contact .contact-overlay .left-contact form input:focus {
+  border: 1px solid #171819;
+}
+.contact .contact-overlay .left-contact form textarea {
+  width: 100%;
+  outline: none;
+  border: 1px solid #ced4da;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 0.15rem;
+  resize: vertical;
+}
+.contact .contact-overlay .left-contact form textarea::placeholder {
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  color: #495057;
+  font-weight: 500;
+  font-family: "Roboto", open-sans;
+}
+.contact .contact-overlay .left-contact form textarea:focus {
+  border: 1px solid #171819;
+}
+.contact .contact-overlay .left-contact form button {
+  width: 100%;
+  outline: none;
+  border: none;
+  background-color: #171819;
+  border-radius: 0.15rem;
+  margin-top: 1rem;
+  line-height: 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: "Roboto", open-sans;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 1rem;
+  transition: 0.3s linear;
+}
+.contact .contact-overlay .left-contact form button:hover {
+  background-color: #f13a11;
+}
+.contact .contact-overlay .right-contact {
+  width: 45%;
+}
+.contact .contact-overlay .right-contact p {
+  color: #495057;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  font-family: "Roboto", open-sans;
+  padding-bottom: 3rem;
+  border-bottom: 0.5px solid #ced4da;
+}
+.contact .contact-overlay .right-contact p i {
+  color: #f13a11;
+}
+.contact .contact-overlay .right-contact #my-iframe {
+  margin: 2rem 0;
+  width: 100%;
+  height: 65%;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .contact {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+    min-height: 50vh;
+  }
+  .contact .contact-overlay {
+    width: 85%;
+  }
+  .contact .contact-overlay h2 {
+    font-size: 1.8rem;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: -0.1rem;
+    margin-bottom: 2rem;
+    text-wrap: nowrap;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .contact .contact-overlay {
+    padding: 2rem 0;
+    width: 87%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+  .contact .contact-overlay h2 {
+    font-size: 1.8rem;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: -0.1rem;
+    margin-bottom: 2rem;
+    text-wrap: nowrap;
+  }
+  .contact .contact-overlay .left-contact {
+    width: 100%;
+  }
+  .contact .contact-overlay .right-contact {
+    width: 100%;
+  }
+  .contact .contact-overlay .right-contact #my-iframe {
+    margin: 2rem 0;
+    width: 100%;
+    height: 30vh;
+  }
+}
+footer {
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #ced4da;
+}
+footer .footer-overlay {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+footer .footer-overlay h1 {
+  font-size: 3rem;
+}
+footer .footer-overlay h2 {
+  font-size: 2.5rem;
+  font-family: 'Poppins', sans-serif;
+}
+footer .footer-overlay h3 {
+  font-size: 1.4rem;
+  font-family: 'Poppins', sans-serif;
+}
+footer .footer-overlay p {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  color: #909090;
+  font-family: "Roboto", open-sans;
+}
+footer .footer-overlay h6 {
+  font-size: 1rem;
+  color: #909090;
+  font-family: "Roboto", open-sans;
+  font-weight: 600;
+}
+footer .footer-overlay h4 {
+  font-size: 1.125rem;
+  font-family: "Roboto", open-sans;
+}
+footer .footer-overlay h5 {
+  font-size: 1.8rem;
+  font-family: 'Poppins', sans-serif;
+}
+footer .footer-overlay ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+footer .footer-overlay ul > :first-child i {
+  font-size: 1.2rem;
+}
+footer .footer-overlay ul i {
+  font-size: 1rem;
+  color: #f13a11;
+}
+footer .footer-overlay ul a {
+  margin-left: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #909090;
+  font-family: "Roboto", open-sans;
+}
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+  footer {
+    min-height: 17vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .footer-overlay {
+    width: 87%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  footer .footer-overlay h1 {
+    font-size: 2.5rem;
+  }
+  footer .footer-overlay h2 {
+    font-size: 1.8rem;
+  }
+  footer .footer-overlay h3 {
+    font-size: 1rem;
+  }
+  footer .footer-overlay p {
+    font-size: 0.9rem;
+  }
+  footer .footer-overlay h4 {
+    font-size: 0.9rem;
+  }
+  footer .footer-overlay ul a {
+    font-size: 0.9rem;
+  }
+}
