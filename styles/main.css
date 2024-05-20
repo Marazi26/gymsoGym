@@ -25,6 +25,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow-y: hidden;
 }
 .desktop-sizing {
   width: 80%;
@@ -35,6 +36,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow-y: hidden;
   min-height: 50vh;
 }
 .tablet-sizing {
@@ -46,6 +48,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow-y: hidden;
   min-height: 65vh;
 }
 .mobile-sizing {
@@ -148,6 +151,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow-y: hidden;
   min-height: 10vh;
   background-color: #171819;
   position: fixed;
@@ -295,7 +299,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 90vh;
+  overflow-y: hidden;
   background-image: url("../assets/header/hero-bg.jpg");
   background-position: center;
   background-size: cover;
@@ -405,7 +409,8 @@ header .header-overlay .buttons .right-btn:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 70vh;
+  overflow-y: hidden;
+  min-height: 73vh;
   background-color: #171819;
 }
 .scheduel .scheduel-overlay {
@@ -493,6 +498,7 @@ header .header-overlay .buttons .right-btn:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow-y: hidden;
     min-height: 50vh;
   }
   .scheduel .scheduel-overlay {
@@ -516,7 +522,9 @@ header .header-overlay .buttons .right-btn:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow-y: hidden;
     min-height: 65vh;
+    min-height: 90vh;
   }
   .scheduel .scheduel-overlay {
     width: 87%;
@@ -590,6 +598,7 @@ header .header-overlay .buttons .right-btn:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow-y: hidden;
   min-height: 70vh;
   background-color: #f9f9f9;
 }
@@ -799,6 +808,7 @@ header .header-overlay .buttons .right-btn:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow-y: hidden;
   }
   .about .about-overlay {
     padding: 2rem 0;
@@ -880,6 +890,7 @@ header .header-overlay .buttons .right-btn:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow-y: hidden;
 }
 .class .class-overlay {
   width: 80%;
@@ -1056,6 +1067,7 @@ header .header-overlay .buttons .right-btn:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow-y: hidden;
   }
   .class .class-overlay {
     padding: 2rem 0;
@@ -1106,6 +1118,7 @@ header .header-overlay .buttons .right-btn:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow-y: hidden;
   background-color: #171819;
 }
 .time-table .time-table-overlay {
@@ -1316,6 +1329,7 @@ header .header-overlay .buttons .right-btn:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow-y: hidden;
 }
 .contact .contact-overlay {
   width: 70%;
@@ -1424,6 +1438,7 @@ header .header-overlay .buttons .right-btn:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow-y: hidden;
     min-height: 50vh;
   }
   .contact .contact-overlay {

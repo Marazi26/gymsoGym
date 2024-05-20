@@ -155,7 +155,6 @@ nav {
 
 header {
     .desktop();
-    min-height: 90vh;
     background-image: url("../assets/header/hero-bg.jpg");
     background-position: center;
     background-size: cover;
@@ -231,7 +230,7 @@ header {
 
 .scheduel {
     .desktop();
-    min-height: 70vh;
+    min-height: 73vh;
     background-color: @black;
 
     .scheduel-overlay {
@@ -282,7 +281,6 @@ header {
 
     @media screen and (min-width:768px) and (max-width:1024px) {
         .tablet();
-
         .scheduel-overlay {
             .tablet-sizing();
             .flex-box-center();
@@ -300,6 +298,7 @@ header {
 
     @media screen and (min-width:320px) and (max-width:768px) {
         .mobile();
+        min-height: 90vh;
 
         .scheduel-overlay {
             .mobile-sizing();
@@ -500,7 +499,6 @@ header {
 
 .class {
     .desktop();
-
     .class-overlay {
         .desktop-sizing();
 
